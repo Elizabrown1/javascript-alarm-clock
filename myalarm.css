@@ -1,0 +1,97 @@
+body{ 
+    text-align: center; 
+    background: pink; 
+  font-family: sans-serif; 
+  font-weight: 100; 
+} 
+h1{ 
+  color: white; 
+  font-weight: 100; 
+  font-size: 40px; 
+  margin: 40px 0px 20px; 
+} 
+.background{
+    font-family: sans-serif; 
+    color: #fff; 
+    display: inline-block; 
+    /*font-weight: 100; */
+    text-align: center; 
+    font-size: 30px; 
+
+} 
+.background> div{ 
+    padding: 15px; 
+    border-radius: 100%; 
+    background: lightblue; 
+    display: inline-block; 
+} 
+.background div > input{ 
+    padding: 15px; 
+    border-radius: 100%; 
+    background:white; 
+    /*display: inline-block;*/
+    font-weight: bold; 
+    background-color: white;
+
+} 
+.background div > button{ 
+    padding: 15px; 
+    border-radius: 100%; 
+    background: white; 
+    /*display: inline-block; */
+    
+} 
+.background div > select{ 
+    padding: 15px; 
+    border-radius:100%; 
+    background: white; 
+    display: inline-block; 
+    
+} 
+.smalltext{ 
+    padding-top: 5px; 
+    font-size: 16px; 
+}
+
+/*/*.background{
+	background-color: #B848FF;
+	height: 350px;
+	padding: 80px;
+}
+/*.topic{*/
+	/*width: 200px;*/
+	/*height: 20px;*/
+	/*font-family: cursive;*/
+/*}*/
+/*.container{
+	width: 600px;
+	height: 200px;
+	background-position: center;
+	background-color: pink;
+	
+}
+#myresult{
+    width: 80px;
+    height: 30px;
+    border: 2px solid blue;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+}
+input{
+	width: 50px;
+    height: 50px;
+	background-color: #3cbc8d;
+	border: none;
+	border-radius: 100px;
+
+}
+.hour{
+	margin-left: -200px;
+}
+#minutes{
+	margin-top:-50px;
+
+}
+*/*/*/

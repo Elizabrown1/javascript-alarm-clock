@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="myalarm.css">
+</head>
+<body>
+	<h1>ALARM CLOCK</h1>
+	<div class="background">
+		<div id="myresult"></div>
+    
+	<div>
+	<input type="" name="" placeholder="hour" id="hours">
+	<div class="smalltext">hour</div>
+	</div>
+	<div>
+	<input type="" name="" placeholder="minutes" id="minutes">
+	<div class="smalltext">minutes</div>
+	</div>
+	<div>
+	<input type="" name="" placeholder="seconds" id="seconds">
+	<div class="smalltext">seconds</div>
+	</div>
+	<div>
+    <button onclick="myfunc()">set</button>
+    </div>
+    <!-- <div> -->
+	<button onclick="setTimeout(myFunction,3000);" style="display: none;">snooze</button>
+    <!-- </div> -->
+    <div>
+    <button onclick="mystop()">stop</button>
+    </div>
+    <div>
+    <select id="checkperiod">
+		<option value="PM">PM</option>
+		<option value="AM">AM</option>
+	</select>
+</div>
+	<!-- <input type="" name="" placeholder="enter snooze" id="snooze" > -->
+	<div id="result" style="display: none">
+	<span id="ques">2+2</span>
+	<input type="number" id="myquestion" placeholder="enter answer" />	
+	<button onclick="stop()"> submit </button>
+
+</div>
+
+<script type="text/javascript">
+	setInterval(myname,1000);
+	let total;
+	var a
+	var b;
+	var c;
+    var d;
+    var totalTime
+    var music = new Audio('all izz well.mp3')
+    let snoozedata;
+	function myname(){
+		var date = new Date()
+	 totalTime= date.toLocaleTimeString();
+	myresult.innerHTML= totalTime;
+	if (total == totalTime) {
+
+			 music.play()
+
+         }
+     
+	}
+
+	function myfunc(){
+		 a = hours.value
+       b = minutes.value
+       c = seconds.value
+       d = checkperiod.value;
+      // total = a + ":" + b + ":" + c + " " +  d;
+      total = `${a}:${b}:${c} ${d}`
+	alert('alarm set')
+      
+       // console.log(totalTime)
+       // console.log(total)
+         
+	}
+	// let setnterval=()=>{
+	// 	console.log("snooze me");
+	// }
+	
+	let  mystop = ()=>{
+		document.getElementById('result').style.display='block';
+		
+	// clearInterval(myCar)
+	// music.pause()
+	}
+	
+function  stop(){
+	if (myquestion.value == 4) {
+			
+			music.pause()
+		document.getElementById('result').style.display='none';
+
+		}
+		else{
+
+		}
+}
+
+</script>
+
+
+
+</body>
+</html>
